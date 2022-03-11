@@ -20,21 +20,24 @@ calcArea(51,1)
 // Desafio 3
 function splitSentence(string) {
   let listaArray = string.split(" ");
-  
+
   return listaArray
 }
 
 
-
-
-
-
-
-
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(lista) {
+let ultimaPalavra = lista[lista.length -1];
+let primeiraPalavra = lista[0];
+return lista = ultimaPalavra + ', ' + primeiraPalavra;
 }
+
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']))
+console.log(concatName(['foguete', 'não', 'tem', 'ré']))
+console.log(concatName(['captain', 'my', 'captain']))
+
+
+
 
 // Desafio 5
 function footballPoints() {
