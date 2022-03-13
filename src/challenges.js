@@ -105,6 +105,7 @@ console.log(catAndMouse(10, 4, 22));
 
 
 // Desafio 8
+// codigo baseado na URL: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
 function fizzBuzz(array2) {
 
   let recebeArray = [];
@@ -137,12 +138,71 @@ function fizzBuzz(array2) {
 
 
     // Desafio 9
-    function encode() {
-      // seu código aqui
+    function encode(param) {
+   
+      let recebeString = param.split('')
+
+      for (let i= 0; i< recebeString.length; i+= 1) {
+
+        if (recebeString[i] === 'a') {
+          recebeString[i] = 1
+        }
+        else if (recebeString[i] === 'e') {
+        recebeString[i] = 2;
+        }
+        else if (recebeString[i] === 'i') {
+        recebeString[i] = 3;
+        }
+        else if (recebeString[i] === 'o') {
+          recebeString[i] = 4;
+        }
+        else if (recebeString[i] === 'u') {
+          recebeString[i] = 5;
+        }
+      }
+      let result = recebeString.join('');
+      return result;
     }
-    function decode() {
-      // seu código aqui
+  
+console.log(encode('lalaland'));
+
+
+
+
+
+    
+    function decode(param2) {
+    
+    let splitString2 = param2.split('');
+console.log(splitString2);
+    for (let i2 = 0; i2 < splitString2.length; i2 += 1) {
+      if (splitString2[i2] === '1') {
+        splitString2[i2] = 'a';
+      }
+      else if (splitString2[i2] === '2') {
+        splitString2[i2] = 'e';
+      }
+      else if (splitString2[i2] === '3') {
+        splitString2[i2] = 'i';
+      }
+      else if (splitString2[i2] === '4') {
+        splitString2[i2] = 'o';
+      }
+      else if (splitString2[i2] === '5') {
+        splitString2[i2] = 'u'; 
+      }
     }
+    let result2 = splitString2.join('');
+    return result2;
+    }
+console.log(decode('iguii'))
+
+
+
+
+
+
+
 
     // Desafio 10
     function techList() {
